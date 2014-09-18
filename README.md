@@ -14,3 +14,15 @@ This project include:
 2. **ec_dedication.tex, ec_acknowledgments.tex, ec_abstract.tex, ec0_introduction.tex, ec1_planteamiento.tex, ..., ec6_conclusion.tex:** These files contain the body of your thesis, you must modify these files based on your thesis.
 3. **BibThesis.bib:** This file contain your bibliography, you can obtain it trough a bibliography manager software such as mendeley, zotero, etc.
 4. **MyThesis.tex:** This file join all the .tex files in order to create **MyThesis.pdf**, which is your final thesis document. In this file, you must update your personal information and run it with some LaTeX software such as TexStudio and so on.
+
+Suggested Books
+---------------
+
+Although I do not try to make a manual to write a thesis, I made some tips, mainly, in the Introduction and Statement of the Problem. Some of these tips were taken from: 
+
+[1] Hans F. et all.(2006). How to Write a Succesful Science Thesis, The Concise Guide for Students
+
+[2] James, E.(2003). Guide to the Successful Thesis and Dissertation, A Handbook for Students and Faculty, Fifth Edition, University of Pittsburgh, Pennsylvania, U.S.A.
+
+
+
