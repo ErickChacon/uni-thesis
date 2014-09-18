@@ -9,7 +9,7 @@ Description
 
 This project include:
 
-1. **UniThesis.cls:** This file has the main code of UniThesis template, it automatically creates the fontmatter and defines the features of a thesis document at *Universidad Nacional de Ingeniería*. You do not need to manipulate this file. You can all this class in a .tex file with: `\documentclass[a4paper, 12pt]{article}`
+1. **UniThesis.cls:** This file has the main code of UniThesis template, it automatically creates the fontmatter and defines the features of a thesis document at *Universidad Nacional de Ingeniería*. You do not need to manipulate this file. You can all this class in a .tex file with: `\documentclass[10pt,a4paper,onecolumn]{UniThesis}`
 
 2. **ec_dedication.tex, ec_acknowledgments.tex, ec_abstract.tex, ec0_introduction.tex, ec1_planteamiento.tex, ..., ec6_conclusion.tex:** These files contain the body of your thesis, you must modify these files based on your thesis.
 3. **BibThesis.bib:** This file contain your bibliography, you can obtain it through a bibliography manager software such as mendeley, zotero, etc.
