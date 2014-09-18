@@ -1,0 +1,87 @@
+% Thesis.tex (Modification of ClemsonThesis - Andrew R. Dalton)
+% Universidad Nacional de Ingeniería Thesis/Dissertation file
+% Developed by Erick Chacon Montalvan, School of Statistics
+% The reference examples are not related with the text 
+% ============================================================================
+% HEADING OF TEX FILE (DEFINING PARAMETERS)
+% ============================================================================
+\documentclass[10pt,a4paper,onecolumn]{UniThesis}
+\usepackage{blindtext}				% Random text
+\university{\href{http://www.uni.edu.pe/}{UNIVERSIDAD NACIONAL DE INGENIERÍA}}
+\department{FACULTAD DE INGENIERÍA ECONÓMICA, ESTADÍSTICA Y CIENCIAS SOCIALES
+}
+\title{``PREDICCIÓN DE AMBIENTES DE DEPOSICIÓN SEDIMENTARIA EN BASE A CARACTERÍSTICAS BATIMETRÍCAS, MORFOLÓGICAS Y SEDIMENTARIAS EN EL MARGEN CONTINENTAL PERUANO MEDIANTE MODELOS DE ESTADÍSTICA ESPACIAL"}
+\documentType{TESIS}
+\major{INGENIERO ESTADÍSTÍCO}
+\author{B.Sc. ERICK ALBACHARRO CHACON MONTALVAN}
+\location{Lima - Perú}
+\thesisYear{2014}
+\logo{
+\begin{center}
+\includegraphics[scale=0.5]{./Images/logo_uni.jpg}
+\end{center}
+}
+
+% PDF Setup -- most of this you do not need to touch
+\hypersetup{
+    colorlinks,
+    linkcolor={black},
+    citecolor={blue},
+    filecolor={black},
+    urlcolor={black},
+    pdftitle={\theTitle},
+    pdfauthor={\theAuthor},
+    pdfsubject={\theDocumentType},
+    pdfkeywords={\theUniversity, \theDepartment, \theDocumentType, \theMajor},
+    pdfstartpage={1},
+}
+
+% ============================================================================
+% BODY OF THE DOCUMENT
+% ============================================================================
+\begin{document}
+%  ============================================================================
+    \frontmatter % Begin front matter (pages are numbered with Roman numerals)
+%  ============================================================================
+    \maketitle                                       % Generate the title page
+    \doublespacing                                   % Text should be double spaced
+    \setlength{\parskip}{1em}                        % Space before a paragraph
+    \setcounter{page}{1}                             % Dedication begins on page 2
+    \addtotoc{Dedicatoria}{\input{ec_dedication.tex}} % Insert dedication.tex file
+    \addtotoc{Agradecimientos}{\input{ec_acknowledgments.tex}} % Insert acknowledgments.tex file
+    \addtotoc{Resumen}{\input{ec_abstract.tex}}  	 % Generate the abstract
+    \singlespacing                             		 % Single space the lists
+	\tableofcontents %\clearpage                	 % Generate the Table of Contents
+    \addtotoc{Índice de Cuadros}{\listoftables}        % Generate the List of Tables
+    \addtotoc{índice de Figuras}{\listoffigures}		 % Generate the List of Figures
+%  ===========================================================================
+    \mainmatter % Begin main matter (pages are numbered with Arabic numerals)
+%  ===========================================================================
+    \doublespacing % Text should be double spaced
+    % Here we have each chapter in a separate file.  Name these as you choose,
+    % and include them in the order you want them to appear.  Be sure to use
+    % the \inputfile command.
+    \addtotoc{Introducción}{\input{ec0_introduccion.tex}}  % Generate the introduction
+    \inputfile{ec1_planteamiento.tex}
+    \inputfile{ec2_marcoteorico.tex}
+    \inputfile{ec3_metodologia.tex}
+    \inputfile{ec4_results.tex}
+    \inputfile{ec5_discusion.tex}
+    \inputfile{ec6_conclusion.tex}
+%  ===========================================================================
+    \backmatter % Begin main matter (pages are numbered with Arabic numerals)
+%  ===========================================================================
+    % The appendices are optional.  This is the format for two or more.
+    % If you do not wish to include an appendix, comment out these lines.
+    \begin{appendices}
+        \begin{subappendices}
+            \inputfile{appendixA.tex}
+            \inputfile{appendixB.tex}
+        \end{subappendices}
+    \end{appendices}
+
+    \singlespacing                             % Single space the Bibliography
+    \hackplain								   % Do not enumerate first bibliography page
+    \bibliographystyle{apalike}				   % Style of bibliography
+    \addtotoc{Bibliografía}{\bibliography{BibThesis}} % Adding bibliography
+\end{document}

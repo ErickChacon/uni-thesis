@@ -1,0 +1,104 @@
+\chapter{Marco Teórico}
+\thispagestyle{empty} %not enumerate the first page
+\section{Tema Principal 1 (Ejm. El Ecosistema Marino)}
+
+Explicación general del tema directamente relacionado con el desarrollo de la tesis. 
+
+Es de suma importancia referencias todas aquellas ideas que no son originales del investigador. Genrelamnete en esta sección, la mayoría del texto va referenciado. Las ideas del investigador se pueden dejar para la discusión.
+
+
+\subsection{Subsección (Ejm.Clasificación del Ambiente Marino)}
+
+Aunque el efecto mixto de la circulación oceánica asegura mayor diversidad, pero pequeña a través de grandes cantidades de agua, hay, sin embargo, algunas diferencias de mayor contraste entre las diferentes partes del mar. Una capa fría, oscura, lenta y hondo del océano profundo es obviamente muy diferente de una capa bien iluminada, sacudida por olas de la superficie marina, o fuertes corrientes y fluctuaciones de temperatura y salinidad que ocurren cerca a la costa. Por ello se tiene clasificaciones de subdivisiones del ambiente marino (Fig. \ref{fig:OceanClass}), el cual toma en cuenta las diferentes condiciones de vida en diferentes partes de los océanos.
+
+
+\begin{enumerate}[(a)]
+\item Epipelágico:
+
+También llamada la zona eufótica, cubre desde la superficie hasta los 200 metros de profundidad. Es la capa donde llega la mayor iluminación del sol y es de lejos en donde más vida se encuentra. La vida en esta zona abarca desde los pequeños fitoplancton a el enorme tiburón ballena, el pez más grande en el océano. Esta capa no es considerada parte del fondo marino.
+
+\item Mesopelágico:
+
+El fondo marino es considerado a partir de esta capa, en donde la corteza se quiebra. Es la zona más alta del fondo marino y comprende desde 200 hasta 1000 metros de profundidad. Esta zona es la capa oceánica con la mayor diferencia en temperatura. La comida es escasa debido a que no hay suficiente luz para que las plantas se desarrollen. Las criaturas que viven en esta zona están en continua competencia para su supervivencia por eso cuentan con distintos mecanismos de defensa como la bioluminiscencia.
+
+\item Batipelágico:
+
+Esta zona es la parte donde más del 75\% del agua de los océanos recae. Abarca de los 1000 hasta los 4000 metros. Esta capa es denominada zona afótica por la absoluta falta de luz natural y Batipelágico por aguas profundas.
+
+\item Abisopelágico:
+
+Comprende entre los 4000 y 6000 metros de profundidad. Su nombre significa sin fondo pero, en realidad, es donde la mayor parte del fondo marino se sienta. A menudo, es conocido como llano abisal porque la mayor parte del fondo marino es amplio y casi completamente plano.
+
+\item Zona Hadal: 
+
+Es absolutamente la parte más profunda del océano. Hadal significa \textit{no visto} y es donde se encuentran las trincheras del océano profundo. Tiene un rango de profundidad de 6000 a 11000 metros. 
+\end{enumerate}
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.4]{./Images/Ocean}
+\caption{Principales divisiones del ambiente marino.\\
+ \textbf{Fuente:} Elements...~\cite{Gumiaux2003}}
+\label{fig:OceanClass}
+\end{figure}
+
+
+\section{Tema Principal 2 (Ejm. El Fondo Marino y sus Sedimentos)}
+
+La dinámica de la interacción entre los seres bióticos y los agentes externos de un ecosistema marino...
+
+\section{Otra sección}
+
+\blindtext
+\section{Técnica Estadística 1 (Ejm. Geoestadística)}
+
+\subsection{Introducción Histórica}
+La Geoestadística es la sub-rama de la Estadística Espacial, en el cual los datos consisten de una muestra finita de medidas relacionadas a un fenómeno espacialmente continuo. Por ejemplo, la profundidad en un sondeo batimétrico. Los avances de la Geoestadística no se dieron exactamente en la teoría estadística sino en distintas áreas de aplicación. En agricultura, Fisher aportó con su pensamiento espacial de aleatoriedad y bloques. En minería, Matheron y sus colegas desarrollaron la mayoría de la teoría clásica de Geoestadística. Y en forestales, que fue el área de elección para la tesis de doctorado de Matheron (Considerado el padre de la Geoestadística)~\cite{Diggle2007}.
+
+\subsection{Descripción General}
+
+Imagine que estamos interesados en conocer la forma de la topografía del fondo marino en un área cuadrada de 100 metros de latitud por 100 metros de longitud. Para ello, mediante trabajos \textit{in situ}, se obtuvo los niveles de profundidad $y_1$, $y_2$, $y_3$,... ,  $y_{10}$ en 10 ubicaciones puntuales $x_1$, $x_2$, $x_3$,... ,  $x_{10}$. La idea de conocer la  topografía, indica que estamos interesados de obtener el valor de la profundidad en una ubicación arbitraria $x_0$ en base a los datos disponibles de la muestra $y_1$, $y_2$, $y_3$,... ,  $y_{10}$ (Fig. \ref{fig:2geo1}).
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.3]{./Images/geo1}
+\caption{Ejemplo de Aplicación de Geoestadística. El signo de interrogación representa la ubicación en donde se desea estimar el valor de la profundidad $(y_0)$; los $y_i$, para $i=1,2,3,...,10$, representan los datos obtenidos del trabajo de campo. La degradación del color del fondo significa que a mayor distancia, existe menor similaridad entre el dato $y_i$ y el valor de la profundidad de interés  $(y_0)$.}
+\label{fig:2geo1}
+\end{figure}
+
+\subsection{Correlación Espacial}
+
+El análisis de la correlación espacial, es la primera etapa de un análisis geoestadístico, algunos lo denominan estructura espacial (\textit{Dos objetos cercanos son más similares que dos a mayor distancia}). Se realiza esta etapa porque se considera que los datos son autocorrelacionados espacialmente de acuerdo a la distancia entre las observaciones. Esta etapa enfatiza la diferencia con un análisis estadístico clásico, porque en este se considera que las observaciones son independientes. La correlación espacial puede ser evaluada por funciones como la semivarianza, covarianza y correlación, las cuales pueden ser vistas por medio de las herramientas variograma, covariograma y correlograma. A continuación presentaremos estos conceptos a mayor detalle.
+
+La función del variograma puede ser descompuesta del siguiente modo:
+
+\[V(x,x')=\frac{1}{2}[Var\{S(x)\}+Var\{S(x+h)\}-2.Cov\{S(x),S(x+h)\}]\]
+
+En caso de que el proceso sea estacionario se cumple que:
+\begin{equation}
+V(h)=\sigma^2\{1-\rho(h)\}
+\label{eq:variogramaest}
+\end{equation}
+
+\subsection{Mas subsecciones}
+
+\section{Otra Técnica (Ejm. Regresión Lógistica Espacial)}
+
+A continuación consideramos un modelo lineal generalizado cuando la variable respuesta es dicotómica, cuyas respuestas podrían ser ``éxito'' o ``fracaso'', vivo o muerto, presente o ausente, es un depocentro o no lo es, etc. Así que, sea la función de probabilidad de una variable aleatoria binaria $Z$:
+
+\[ 
+P(Y)=\left\{ \begin{array}{ccl}
+\pi &, 1 & \textrm{: el resultado es éxito}\\
+1-\pi &, 0 & \textrm{: el resultado es fracaso} \end{array} \right.
+\]
+\subsection{Mas subsecciones}
+
+\blindtext
+
+\section{Mas técnicas}
+
+\blindtext
+
+

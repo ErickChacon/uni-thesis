@@ -1,0 +1,184 @@
+\chapter{Metodología}
+\thispagestyle{empty}
+En el presente capítulo se muestra los aspectos metodológicos considerados para la realización del estudio. Tales como la naturaleza de los datos, tipo de estudio, el pre-procesamiento de los datos, técnicas estadísticas a emplear, entre otras.
+
+\section{Diseño de Investigación}
+\subsection{Tipo de Estudio}
+
+Nuestro estudio... el tipo de estudio es Predictivo-Correlacional...
+
+\subsection{Área de Estudio}
+
+El área de estudio cubre la región delimitada por los rangos de latitud $[-20.7,-1.3]$ y de longitud $[-85.6,-69.8]$ (Fig. \ref{fig:area_estudio}). Note que está área cubre la parte norte del Sistema de la Corriente de Humboldt.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.8]{./Images/StudyAreaBathy}
+\caption{Área de Estudio para la Batimetría (Celeste)}
+\label{fig:area_estudio}
+\end{figure}
+
+\subsection{Muestra}
+
+
+La \textbf{muestra} viene a ser los datos recolectados en las trayectorias de los cruceros científicos...
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{./Images/Source7}
+\caption{Cruceros de IMARPE}\label{fig:Source7}	
+\end{subfigure}
+\begin{subfigure}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{./Images/Source2}
+\caption{Cruceros-IRD y grilla-DHN}\label{fig:Source2}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{./Images/Source1}
+\caption{Grilla-DHN}\label{fig:Source1}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{./Images/Source5}
+\caption{Cruceros multibeam-NOAA}\label{fig:Source5}	
+\end{subfigure}
+\begin{subfigure}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{./Images/Source3}
+\caption{Línea Costera-GADM}\label{fig:Source3}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{./Images/Source6}
+\caption{Grilla-SRTM30\_PLUS}\label{fig:Source6}
+\end{subfigure}
+\caption{Distribución de las fuentes de datos batimétricos.}
+\label{fig:bat_muestra}
+\end{figure}
+
+Se consideran los datos de estas fuentes porque son Institutos...
+\begin{description}
+\item[Instituto del Mar del Perú \href{http://www.imarpe.pe/}{(IMARPE)}:]
+Organismo Técnico Especializado del Sector Producción, Subsector Pesquería, orientado a la investigación científica, así como al estudio y conocimiento del Mar Peruano y sus recursos, para asesorar al Estado en la toma de decisiones con respecto al uso racional de los recursos pesqueros y la conservación del ambiente marino, contribuyendo activamente con el desarrollo del país \href{http://www.imarpe.pe/}{(http://www.imarpe.pe/).}
+\item[Institut de recherche pour le développement \href{http://es.ird.fr/}{(IRD)}:]
+Organismo de investigación original y único en el panorama europeo de la investigación para el desarrollo, tiene como vocación realizar investigaciones en el Sur, para el Sur y con el Sur \href{http://es.ird.fr/}{(http://es.ird.fr/)}. En el Perú tiene un convenio internacional con IMARPE a través del proyecto \href{http://es.discoh.ird.fr/}{(LMI-DISCOH)}\footnote{Dinámicas del sistema de la Corriente de Humboldt}, el cual tiene como objetivo el estudio de las dinámicas océano-atmósfera, bio-geoquímicas y ecológicas en el SCH con el fin de comprender y anticipar el efecto de las variabilidades intra-estacionarias, interanuales, decenales y de cambio climático sobre la dinámica del ecosistema costero \href{http://es.discoh.ird.fr/}{(http://es.discoh.ird.fr/)}.
+\item[Dirección de Hidrografía y Navegación \href{https://www.dhn.mil.pe/}{(DHN)}:] 
+Su misión es administrar, operar e investigar las actividades relacionadas con las ciencias del ambiente en el ámbito acuático, con el fin de contribuir al desarrollo nacional, brindar apoyo y seguridad en la navegación a las Unidades Navales y a los navegantes en general \href{https://www.dhn.mil.pe/}{(https://www.dhn.mil.pe/)}.
+\item[National Oceanic and Atmospheric Administration \href{http://www.noaa.gov/}{(NOAA)}:] 
+Es una agencia que enriquece la vida a través de la ciencia. Su alcance va desde la superficie del sol hasta las profundidades del mar, mientras que trabajan para mantener a los ciudadanos informados de los cambios del entorno que les rodea \href{http://www.noaa.gov/}{(http://www.noaa.gov/)}.
+\item[Global Administrative Areas \href{http://www.gadm.org/}{(GADM)}:] 
+Es una base de datos espacial de la localización de las áreas administrativas del mundo (o límites Administrativas) para su uso en el SIG y software similar. Áreas administrativas de esta base de datos son los países y subdivisiones de menor nivel, como provincias, departamentos, etc. GADM describe dónde están áreas administrativas (las características espaciales), y para cada área proporciona algunos atributos, como los nombres y variantes \href{http://www.gadm.org/}{(http://www.gadm.org/)}.
+
+\item[SRTM30\_PLUS \href{http://topex.ucsd.edu/WWW_html/srtm30_plus.html}{(SRTM30\_PLUS)}:] Es un proyecto realizado con el fin de obtener datos globales de elevación y batimetría con una resolución de 30 segundos. Se ha desarrollado a partir de una amplia variedad de fuentes de datos. La tierra y la topografía del hielo proviene de la topografía SRTM30 y ICESat, respectivamente. La batimetría del Océano se basa en un nuevo modelo de satélite gravedad, donde la proporción de la gravedad de la topografía se calibra con 298 millones de sondeos editados.
+
+\end{description}
+
+
+\section{Operacionalización de las Variables}
+\label{sec:variables}
+
+En los cuadros \ref{cua:mat1} y \ref{cua:mat2} se muestra la matriz de consistencia...
+
+\begin{table}[H]\footnotesize
+\caption{Matriz de consistencia (i)}
+\label{cua:mat1}
+\centering
+\begin{tabular}{ |p{0.25\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}|}
+\hline
+\textbf{Problema Principal} & \textbf{Objetivo Principal} & \textbf{Hipótesis Principal} & \textbf{Variables}\\ \hline \hline
+Se desconoce la ubicación precisa de ambientes de deposición continua en el margen continental peruano. & Predecir la ubicación de probables ambientes de deposición continua en el margen continental peruano. & La ubicación de los ambientes de deposición continua puede ser identificada mediante el tamaño de grano y la composición de la textura del sedimento, y modelada a través de factores batimétricos y morfológicos.  &
+\begin{noindlist}
+\item Variables de Batimetría
+\item Variables de la Morfología del fondo marino
+\item Variables de Sedimentología
+\end{noindlist}\\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[H]\scriptsize
+\caption{Matriz de consistencia}
+\label{cua:mat2}
+\centering
+\begin{tabular}{ |p{0.25\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}|}
+\hline
+\textbf{Problema} & \textbf{Objetivos} & \textbf{Hipótesis} & \textbf{Variables}\\ \hline \hline
+\textbf{1.} No se tiene información a alta resolución que describa las características del fondo marino peruano. Lo cual es necesario para identificar características morfológicas relacionadas a los ambientes de sedimentación.&Modelar la distribución espacial de la profundidad del fondo marino a una alta resolución para obtener rasgos del fondo marino más detallados.  & Existen datos de fuentes locales (Perú) que son más confiables en comparación a grillas batimétricas de baja resolución que se emplean a nivel internacional. &
+\begin{noindlist}
+\item Ubicación Espacial
+\item Profundidad
+\end{noindlist}\\ \hline
+\textbf{2.} Se necesita conocer las características sedimentarias de los ambientes de deposición continua. & Identificar el perfil sedimentario del ambiente de deposición continua mediante clusters.  & Los tipos de ambientes de deposición son caracterizados según el tamaño de grano y la composición de la textura del sedimento. &
+\begin{noindlist}
+\item Fracciones granulométricas
+\item Parámetros estadísticos del tamaño de grano
+\end{noindlist}\\ \hline
+\textbf{3.} No se cuenta con índices morfológicos del fondo marino, así que es necesario definir indicadores de morfología y calcularlos de manera cuantitativa en base a un mapa de batimetría de alta resolución.&Determinar índices morfológicos (Pendiente, rugosidad, localización, dimensión, concavidad, entre otros) del fondo marino que sirvan como variables independientes para la detección de depocentros en el relieve marino.  &Se puede obtener indicadores morfológicos a partir del mapa de batimetría.  &
+\begin{noindlist}
+\item Grilla Batimétrica
+\end{noindlist}\\ \hline
+\textbf{4.} Teóricamente, se conoce que hay asociaciones entre los rasgos de morfología y los ambientes de deposición. Sin embargo, al momento, no se ha cuantificado y definido la significancia de estos rasgos morfológicos en el área del margen continental peruano.&Determinar un modelo espacial para la detección de ambientes de deposición continua en el relieve marino considerando las características morfológicas como covariables.  &La presencia de depocentros es explicada por una tendencia en función a los índices de batimetría y morfometría y por un componente espacial.  &
+\begin{noindlist}
+\item Cercanía a las costas
+\item Pendiente
+\item Curvatura
+\item Distancia a depresiones
+\item Pendiente con dirección
+\item Variabilidad
+\item Tipo de Ambiente Deposicional obtenido en el objetivo 2
+\end{noindlist}\\ \hline
+\textbf{5.} Existen grandes áreas en las que no conocemos si hay presencia de ambientes de deposición continua, los cuales son importantes para obtener información de calidad de los procesos sedimentarios.&Detectar probables ambientes de deposición continua con el perfil de sedimentología identificado.  &Se puede detectar probables ambientes de deposición en base al modelo espacial obtenido, incluso en zonas donde se tiene menor información de los perfiles sedimentarios.  &
+\begin{noindlist}
+\item Tipo de Ambiente Deposicional obtenido en el objetivo 2
+\item Variables morfológicas significativas obtenidas en el objetivo 4
+\end{noindlist}\\ \hline
+\end{tabular}
+\end{table}
+
+\section{Recolección y Tratamiento de los datos}
+
+\subsection{Recolección de Datos}
+
+Se realizó un trabajo de campo...
+
+\subsection{Pre-procesamiento de los Datos}
+Los datos provienen de distintas fuentes por lo que se tuvo que...
+
+\subsection{Procesamiento de los Datos}
+
+En los aproximadamente 200 millones de puntos que se tienen de muestra, existen ciertos problemas que deben ser solucionados antes de realizar el modelamiento de los datos...
+
+\begin{enumerate}[a)]
+\item \textbf{Detección de ubicaciones inconsistentes:}
+
+\item \textbf{Detección de datos repetidos:}
+
+\item \textbf{Detección de datos pseudo-repetidos:}
+
+\item \textbf{Detección de datos atípicos:}
+
+\end{enumerate}
+%\subsection{Detección de ubicaciones inconsistentes}
+%
+%\subsection{Detección de puntos repetidos}
+%
+%\subsection{Detección de Outliers}
+
+\section{Metodología del Modelamiento}
+
+Después de realizar el procesamiento de los datos y un análisis exploratorio de datos, continuamos con...
+
+\subsection{Modelamiento de la Detección de Ambientes Deposicionales}
+
+El esquema general se muestra en la Fig. \ref{fig:ThesisModel}...
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.3]{./Images/ThesisModelling}
+\caption{Esquema del modelamiento general del estudio}
+\label{fig:ThesisModel}
+\end{figure}
+
