@@ -1,12 +1,18 @@
 % Thesis.tex (Modification of ClemsonThesis - Andrew R. Dalton)
 % Universidad Nacional de Ingeniería Thesis/Dissertation file
 % Developed by Erick Chacon Montalvan, School of Statistics
-% The reference examples are not related with the text 
+% The reference examples are not related with the text
 % ============================================================================
 % HEADING OF TEX FILE (DEFINING PARAMETERS)
 % ============================================================================
 \documentclass[10pt,a4paper,onecolumn]{UniThesis}
 \usepackage{blindtext}				% Random text
+\usepackage{natbib}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-25pt}{40pt}
+
 \university{\href{http://www.uni.edu.pe/}{UNIVERSIDAD NACIONAL DE INGENIERÍA}}
 \department{FACULTAD DE INGENIERÍA ECONÓMICA, ESTADÍSTICA Y CIENCIAS SOCIALES
 }
